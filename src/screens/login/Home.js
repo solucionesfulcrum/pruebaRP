@@ -15,14 +15,14 @@ const Home = ({ navigation }) => {
 
   //console.log(selectionMall) 
   useEffect(() => {
-    axios.post('http://192.168.1.37:8000/api/token/', {
+    axios.post('http://165.227.176.124:8000/api/token/', {
       "username": 'fulcrum',
       "password": '123456'
     })
       .then(
         (res) => {
           const auth = "Bearer " + res.data.access
-          axios.get('http://192.168.1.37:8000/Mall/',
+          axios.get('http://165.227.176.124:8000/Mall/',
             {
               headers: { 'Authorization': auth, }
             }
@@ -48,14 +48,14 @@ const Home = ({ navigation }) => {
   }, [])
 
   useEffect(() => {
-    axios.post('http://192.168.1.37:8000/api/token/', {
+    axios.post('http://165.227.176.124:8000/api/token/', {
       "username": 'fulcrum',
       "password": '123456'
     })
       .then(
         (res) => {
           const auth = "Bearer " + res.data.access
-          axios.get('http://192.168.1.37:8000/Tienda/?search=' + selectionMall,
+          axios.get('http://165.227.176.124:8000/Tienda/?search=' + selectionMall,
             {
               headers: { 'Authorization': auth, }
             }
@@ -82,14 +82,14 @@ const Home = ({ navigation }) => {
 
   const productoData = (item) => {
     console.log("item", item)
-    axios.post('http://192.168.1.37:8000/api/token/', {
+    axios.post('http://165.227.176.124:8000/api/token/', {
       "username": 'fulcrum',
       "password": '123456'
     })
       .then(
         (res) => {
           const auth = "Bearer " + res.data.access
-          axios.get('http://192.168.1.37:8000/Producto/?search=' + item.url.split("/")[4],
+          axios.get('http://165.227.176.124:8000/Producto/?search=' + item.url.split("/")[4],
             {
               headers: { 'Authorization': auth, }
             }
