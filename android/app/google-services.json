@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1092718595504",
+    "project_id": "loginrp-302b8",
+    "storage_bucket": "loginrp-302b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092718595504:android:8706b4f80bb8452b1e1a75",
+        "android_client_info": {
+          "package_name": "com.realplaza"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092718595504-tf0govaag0mpl448m9eme5uveo5e1kvb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJKnFxbg0BXn3OEH1oTH-acFzc8ARdO6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092718595504-tf0govaag0mpl448m9eme5uveo5e1kvb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
